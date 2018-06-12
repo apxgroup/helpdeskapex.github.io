@@ -7,8 +7,8 @@
      font-family: myriadpro;
      src: url('MyriadPro-Cond.otf');
 	}
-	#campo {background-color:tomato; width: 55%; height: 30%; border-radius: 25px;}
-	html {background-color:lightblue; font-family: "myriadpro";}
+	footer{ width: 55%; height: 20%; border-radius: 25px; }
+	html {background-color:#FFFFFF; font-family: "myriadpro";}
 
 	#id_input{
 		width: 200px; 
@@ -19,7 +19,7 @@
 	}	
 
 	#enviar{
-		background-color: #FF4500;
+		background-color:RGB(0, 95, 172);
 		width: 100px;
 		height: 30px;
 		font-family: "myriadpro";
@@ -27,10 +27,12 @@
 		font-size: 20px;
 		border-radius: 10px;
 		border-style: solid;
+		color: #FFFFFF;
 	}
 
 	#enviar:hover{
-		background-color: tomato;
+		background-color: 000000;
+		color: #ffffff;
 
 	}
 
@@ -43,58 +45,6 @@
 			width: 100px;
 			height: 100px;
 			float:left; }
-	#faq:hover { background-color:tomato;}
-
-		.switch {
-		  position: absolute;
-		  margin-left: -9999px;
-		  visibility: hidden;
-		}
-
-		.switch + label {
-		  display: block;
-		  position: relative;
-		  cursor: pointer;
-		  outline: none;
-		  user-select: none;
-		}
-		.switch--shadow + label {
-		  padding: 2px;
-		  width: 40px;
-		  height: 30px;
-		  background-color: #dddddd;
-		  border-radius: 30px;
-		}
-
-					.switch--shadow + label:before,
-			.switch--shadow + label:after {
-			  display: block;
-			  position: absolute;
-			  top: 1px;
-			  left: 1px;
-			  bottom: 1px;
-			  content: "";
-			}
-			.switch--shadow + label:before {
-			  right: 1px;
-			  background-color: #f1f1f1;
-			  border-radius: 30px;
-			  transition: all 0.4s;
-			}
-			.switch--shadow + label:after {
-			  width: 30px;
-			  background-color: #fff;
-			  border-radius: 100%;
-			  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-			  transition: all 0.4s;
-			}
-
-			.switch--shadow:checked + label:before {
-				  background-color: #8ce196;
-				}
-				.switch--shadow:checked + label:after {
-				  transform: translateX(15px);
-				}
 	</style>
 
 	<script>
@@ -114,7 +64,12 @@
 
 							 <a href="#" onclick="window.load('index.html', 'Pagina', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=770, HEIGHT=400');">Clique para abrir a janela POP-up</a>  
 							-->
+		<header>
+			<img src="img/logo.jpg" width="100%">
+		</header>
 							<center>
+
+
 		<form action="enviar.php" method="post">
 			<label>Subject</label>
 			<br>
@@ -129,9 +84,8 @@
 			<input type="submit" name="enviar" id="enviar" value="SEND">
 
 		</form>
-		<br><br><br>
-			<div id="campo">
-				
+		<hr>
+		<footer>			
 				<h1> FAQ - Frequently Asked Questions </h1>
 				<br>
 				<h3> 
@@ -149,8 +103,7 @@
 					</div>
 
 				</h3>
-			</div>
-
+		</footer>
 
 </body>
 </html>
